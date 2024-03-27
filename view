@@ -1,0 +1,37 @@
+@model List<mvcdemo.DB.Department>
+
+@{
+    ViewBag.Title = "CHETU";
+}
+<h2>CHETU</h2>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <td> Id</td>
+            <td> Dept_Name</td>
+            <td> Office_Loc</td>
+            <td> Emp_Count</td>
+            <td>Total_Project </td>
+            <td> Complete_Project</td>
+            <td>Remaining_Project </td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td> @item.Id</td>
+                <td> @item.Dept_Name</td>
+                <td> @item.Office_Loc</td>
+                <td> @item.Emp_Count</td>
+                <td>@item.Total_Project </td>
+                <td> @item.Complete_Project</td>
+                <td>@item.Remaining_Project </td>
+
+
+            </tr>
+}
+
+    </tbody>
+</table>
+
