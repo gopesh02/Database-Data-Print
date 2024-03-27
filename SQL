@@ -1,0 +1,12 @@
+create database Company
+use Company
+create table Employes(Id int Primary Key Identity(1,1),Dept_Name Varchar(55),Office_Loc varchar(55),Emp_Count varchar(55),Total_Project varchar(55), Complete_Project varchar(55), Remaining_Project varchar(55)) 
+
+create table Department(Id int Primary Key Identity(1,1),Dept_Name Varchar(55),Office_Loc varchar(55),Emp_Count varchar(55),Total_Project varchar(55), Complete_Project varchar(55), Remaining_Project varchar(55)) 
+Insert into Department values('HR', 'G_Floor',35,10,3,7)
+Insert into Department values('Sales', '1_Floor',25,40,13,27)
+Insert into Department values('Marketing', '3_Floor',10,10,3,7)
+Insert into Department values('Consulting', '1_Floor',15,10,3,7)
+Insert into Department values('Develoment', '5_Floor',105,10,3,7)
+Insert into Department values('Discussion', '2_Floor',15,10,3,7)
+select * from Department
